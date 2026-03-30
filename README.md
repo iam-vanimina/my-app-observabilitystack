@@ -42,13 +42,18 @@ values.yaml — DaemonSet that ships every pod log from production namespace →
 iam-addon.tf — Terraform for CloudWatch log group, metric filter on 5xx errors, SNS alarm → email
 
 To install everything after EKS is up:
-bashchmod +x observability/install.sh
+bash
+chmod +x observability/install.sh
 ./observability/install.sh
 3 things to replace before running:
 ```
 ```
 observability/alertmanager/alertmanager-config.yaml → your Slack webhook URL
+```
+````
 observability/fluentbit/iam-addon.tf → your email for SNS alerts
+```
+```
 observability/fluentbit/values.yaml → your AWS account ID in the IRSA annotation (optional)
 Cicd pipelineZIP DownloadAppJS DownloadInstallSH DownloadService monitorYAML DownloadAlert rulesYAML DownloadDashboard configmapYAML DownloadValuesYAML DownloadDownload allYou 
 ```
