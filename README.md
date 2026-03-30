@@ -6,9 +6,9 @@
 Ran 2 commandsRan 2 commands
 #STEP 1 — Instrument the Node.js App
 
-#STEP 2 — Prometheus ConfigCreated
+#STEP 2 — Prometheus Config Created
 
-#STEP 3 — Fluentbit → CloudWatchCreated
+#STEP 3 — Fluentbit → CloudWatch Created
 
 #STEP 4 — Grafana DashboardGrafana dashboard ConfigMap for myappGrafana dashboard ConfigMap for myapp
 
